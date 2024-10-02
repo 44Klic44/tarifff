@@ -1,0 +1,135 @@
+@media (max-width: 480px) {
+  .tarif {
+    overflow: hidden;
+  }
+  .tarif__top {
+    margin-bottom: 12px;
+  }
+  .tarif__top-inner {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 0;
+  }
+  .tarif__top-inner::after {
+    content: none;
+  }
+  .tarif__heading {
+    font-size: 34px;
+  }
+  .scroll-tip {
+    width: 96%;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-bottom: 20px;
+  }
+  .scroll-tip span {
+    text-align: left;
+  }
+  .tarif__cards--desctop .tarif__card {
+    width: 112px;
+    height: 112px;
+    padding: 10px 0;
+  }
+  .tarif__cards--desctop .tarif__card--img {
+    background-size: 112px;
+  }
+  .tarif__cards--desctop .tarif-name {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .tarif__cards--desctop .tarif-name::after {
+    display: none;
+  }
+  .tarif__cards--desctop .tarif-price {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+  .tarif__cards--desctop .tarif-price span {
+    font-size: 17px;
+    display: block;
+  }
+  .tarif__cards--desctop .tarif-short-info {
+    display: none;
+  }
+  .tarif__cards--desctop .tarif-btn {
+    width: 82px;
+    height: 25px;
+    font-size: 10px;
+    padding: 6px 20px;
+  }
+  .trigger-mobile {
+    display: block;
+  }
+  .lg-visible {
+    display: none;
+  }
+  .sm-visible {
+    display: block;
+  }
+  .tarif-btn.sm-visible {
+    display: inline-block;
+  }
+  .tarif__description-container {
+    padding-top: 0px;
+  }
+  .fixed-left .tooltip-container {
+    position: relative;
+  }
+  .tarif__description-item > div:nth-child(1) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .tarif__description-item:nth-child(1) .fixed-left {
+    flex-direction: column-reverse;
+  }
+  .tarif__description-item .trigger-mobile {
+    margin-left: 0;
+  }
+  .tarif__description-item > div {
+    width: 120px;
+
+    font-size: 12px;
+  }
+  .tarif__description-item h6 {
+    font-size: 12px;
+  }
+  .tarif__description-item > div:first-child span {
+    display: none;
+  }
+  img.tooltip-trigger {
+    width: 16px;
+    margin-left: 6px;
+  }
+  .tarif__cards--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .tarif__cards--mobile .tarif__card {
+    width: 300px;
+  }
+  .tarif__cards--mobile .tarif__card--img {
+    height: 350px;
+  }
+  .tarif__cards--mobile .read-more-tooltip {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .tarif__cards--mobile .read-more-tooltip::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .tarif__heading.sm-visible {
+    text-align: center;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #c7c7c7;
+    background-color: #fff;
+  }
+}

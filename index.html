@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="adaptive.css" />
+    <title>Бизнес-психолог</title>
+  </head>
+  <body>
+
+  <div class="test-top"></div>
+    <!-- <div class="test"></div> -->
+    <span id="sectionStarts"></span>
+    
+    <div class="tarif">
+      <div id="mobile-top" class="tarif__top">
+        <div class="tarif__top-inner">
+          <h2 class="tarif__heading sm-visible">Разные пакеты участия</h2>
+        </div>
+      </div>
+     
+      <!-- Карочки тарифов в мобильной  -->
+      <div class="tarif__cards--mobile tarif__cards-container sm-visible">
+        <div class="tarif__card tarif__card--img"></div>
+        <div class="tarif__card">
+          <h4 class="tarif-name">Профессионал</h4>
+          <p class="tarif-price"><span>6663</span> ₽/месяц</p>
+          <div class="tarif-short-info">
+            <p class="light-text">
+              Цена указана с учетом гранта на обучение при рассрочке на 24
+              месяцев
+            </p>
+            <p>
+              <span class="light-text">Полная стоимость 199 900₽</span> <br />
+              Цена с учетом гранта 159 900₽
+            </p>
+            <hr />
+            <div>
+              <div style="max-width: 180px; margin: 0 auto 6px">
+                Пакет для действующих специалистов в психологии, <br />
+                <div class="tooltip-container">
+                  <span class="tooltip-trigger"> Читать дальше</span>
+                  <div class="tooltip-window read-more-tooltip">
+                    <p>
+                      Пакет для действующих специалистов в психологии, которые
+                      хотят повысить квалификацию и работать
+                      с бизнес-аудиторией.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="tarif-btn">Записаться на курс</button>
+        </div>
+        <div class="tarif__card">
+          <h4 class="tarif-name">Профессионал Plus</h4>
+          <p class="tarif-price"><span>9996</span> ₽/месяц</p>
+          <div class="tarif-short-info">
+            <p class="light-text">
+              Цена указана с учетом гранта на обучение при рассрочке на 24
+              месяцев
+            </p>
+            <p>
+              <span class="light-text">Полная стоимость 279 900₽</span> <br />
+              Цена с учетом гранта 239 900₽
+            </p>
+            <hr />
+            <p>
+              Пакет для желающих освоить психологию с нуля и начать частную
+              практику в деловой среде, помогая бизнесу.
+            </p>
+          </div>
+          <button class="tarif-btn">Записаться на курс</button>
+        </div>
+        <div class="tarif__card">
+          <h4 class="tarif-name">Профессионал MBA</h4>
+          <p class="tarif-price"><span>14 163</span> ₽/месяц</p>
+          <div class="tarif-short-info">
+            <p class="light-text">
+              Цена указана с учетом гранта на обучение при рассрочке на 24
+              месяцев
+            </p>
+            <p>
+              <span class="light-text">Полная стоимость 379 900₽</span> <br />
+              Цена с учетом гранта 339 900₽
+            </p>
+            <hr />
+            <p>
+              Пакет для тех, кто хочет трудоустроиться за границей и расширить
+              свои компетенции.
+            </p>
+          </div>
+          <button class="tarif-btn">Записаться на курс</button>
+        </div>
+        <div class="tarif__card">
+          <h4 class="tarif-name">Эксперт One</h4>
+          <p class="tarif-price"><span>10 829</span> ₽/месяц</p>
+          <div class="tarif-short-info">
+            <p class="light-text">
+              Цена указана с учетом гранта на обучение при рассрочке на 24
+              месяцев
+            </p>
+            <p>
+              <span class="light-text">Полная стоимость 294 900₽</span> <br />
+              Цена с учетом гранта 259 900₽
+            </p>
+            <hr />
+            <div>
+              <div>
+                Для тех, кто ценит индивидуальный подход, выбирает полное
+                погружение в профессию
+                <div class="tooltip-container">
+                  <span class="tooltip-trigger" id="starts_mobile"> Читать дальше</span>
+                  <div class="tooltip-window read-more-tooltip">
+                    <p>
+                      Для тех, кто ценит индивидуальный подход, выбирает полное
+                      погружение в профессию психолога и хочет получить
+                      персональное наставничество.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="tarif-btn">Записаться на курс</button>
+        </div>
+      </div>
+      <!-- <span id="starts_mobile"></span> -->
+      <!-- Заголовок  -->
+      <div class="tarif__top">
+        <div class="tarif__top-inner">
+          <h2 class="tarif__heading lg-visible">Разные пакеты участия</h2>
+          <div id="scroll-tip" class="scroll-tip">
+            <span
+              >Листай, чтобы <br />
+              увидеть больше</span
+            >
+            <img src="scroll-ico.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div  class="scroll-tip_mobile">
+        <span
+          >Листай, чтобы <br />
+          увидеть больше</span
+        >
+        <img src="scroll-ico.svg" alt="" />
+      </div>
+      <div class="tarif__scroll-container">
+        <!-- Карочки тарифов  -->
+     
+        <div
+        
+          id="mobile-tarif"
+          class="tarif__cards--desctop tarif__cards-container"
+        >
+          <div class="tarif__card tarif__card--img fixed-left"></div>
+          <div class="tarif__card">
+            <h4 class="tarif-name">Профессионал</h4>
+            <p class="tarif-price"><span>6663</span> ₽/месяц</p>
+            <div class="tarif-short-info">
+              <p class="light-text">
+                Цена указана с учетом гранта на обучение при рассрочке на 24
+                месяцев
+              </p>
+              <p>
+                <span class="light-text">Полная стоимость 199 900₽</span> <br />
+                Цена с учетом гранта 159 900₽
+              </p>
+              <hr />
+              <div>
+                <div style="max-width: 180px; margin: 0 auto 6px">
+                  Пакет для действующих специалистов в психологии, <br />
+                  <div class="tooltip-container">
+                    <span class="tooltip-trigger"> Читать дальше</span>
+                    <div class="tooltip-window read-more-tooltip">
+                      <p>
+                        Пакет для действующих специалистов в психологии, которые
+                        хотят повысить квалификацию и работать
+                        с бизнес-аудиторией.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="tarif-btn lg-visible">Записаться на курс</button>
+            <button class="tarif-btn sm-visible">Купить</button>
+          </div>
+          <div class="tarif__card">
+            <h4 class="tarif-name lg-visible">Профессионал Plus</h4>
+            <h4 class="tarif-name sm-visible">Plus</h4>
+            <p class="tarif-price"><span>9996</span> ₽/месяц</p>
+            <div class="tarif-short-info">
+              <p class="light-text">
+                Цена указана с учетом гранта на обучение при рассрочке на 24
+                месяцев
+              </p>
+              <p>
+                <span class="light-text">Полная стоимость 279 900₽</span> <br />
+                Цена с учетом гранта 239 900₽
+              </p>
+              <hr />
+              <p>
+                Пакет для желающих освоить психологию с нуля и начать частную
+                практику в деловой среде, помогая бизнесу.
+              </p>
+            </div>
+            <button class="tarif-btn lg-visible">Записаться на курс</button>
+            <button class="tarif-btn sm-visible">Купить</button>
+          </div>
+          <div class="tarif__card">
+            <h4 class="tarif-name lg-visible">Профессионал MBA</h4>
+            <h4 class="tarif-name sm-visible">MBA</h4>
+            <p class="tarif-price"><span>14 163</span> ₽/месяц</p>
+            <div class="tarif-short-info">
+              <p class="light-text">
+                Цена указана с учетом гранта на обучение при рассрочке на 24
+                месяцев
+              </p>
+              <p>
+                <span class="light-text">Полная стоимость 379 900₽</span> <br />
+                Цена с учетом гранта 339 900₽
+              </p>
+              <hr />
+              <p>
+                Пакет для тех, кто хочет трудоустроиться за границей и расширить
+                свои компетенции.
+              </p>
+            </div>
+            <button class="tarif-btn lg-visible">Записаться на курс</button>
+            <button class="tarif-btn sm-visible">Купить</button>
+          </div>
+          <div class="tarif__card">
+            <h4 class="tarif-name">Эксперт One</h4>
+            <p class="tarif-price"><span>10 829</span> ₽/месяц</p>
+            <div class="tarif-short-info">
+              <p class="light-text">
+                Цена указана с учетом гранта на обучение при рассрочке на 24
+                месяцев
+              </p>
+              <p>
+                <span class="light-text">Полная стоимость 294 900₽</span> <br />
+                Цена с учетом гранта 259 900₽
+              </p>
+              <hr />
+              <div>
+                <div>
+                  Для тех, кто ценит индивидуальный подход, выбирает полное
+                  погружение в профессию
+                  <div class="tooltip-container">
+                    <span class="tooltip-trigger"> Читать дальше</span>
+                    <div class="tooltip-window read-more-tooltip">
+                      <p>
+                        Для тех, кто ценит индивидуальный подход, выбирает
+                        полное погружение в профессию психолога и хочет получить
+                        персональное наставничество.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="tarif-btn lg-visible">Записаться на курс</button>
+            <button class="tarif-btn sm-visible">Купить</button>
+          </div>
+        </div>
+
+        <!-- Описание тарифов  -->
+        <ul class="tarif__description-container" id="tarif__description_mobile">
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Общий срок обучения</h6>
+              <span
+                >*Срок обучения включает период <br />
+                на подготовку и сдачу итоговой аттестации</span
+              >
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Срок обучения включает период на подготовку и сдачу итоговой
+                  аттестации
+                </div>
+              </div>
+            </div>
+            <div>8 месяцев</div>
+            <div>14 месяцев</div>
+            <div>17 месяцев</div>
+            <div>8 месяцев</div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">Продолжительность обучения</h6>
+              <h6 class="sm-visible">Продолжитель-<br />ность обучения</h6>
+            </div>
+            <div>600 часов</div>
+            <div>1050 часов</div>
+            <div>1133 часа</div>
+            <div>600 часов</div>
+          </li>
+          <li class="tarif__description-item diploma-info">
+            <div class="fixed-left">
+              <h6>Диплом о переподготовке</h6>
+            </div>
+            <div>
+              <p class="lg-visible">Диплом о профессиональной переподготовке</p>
+              <p class="sm-visible">Диплом</p>
+              <div class="tooltip-container">
+                <img src="info-ico.svg" alt="" class="tooltip-trigger" />
+                <div class="tooltip-window info-tooltip">
+                  <span>Диплом о профессиональной переподготовке: </span>
+                  «Бизнес-психология»
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="lg-visible">
+                2 диплома о профессиональной переподготовке
+              </p>
+              <p class="sm-visible">2 диплома</p>
+              <div class="tooltip-container">
+                <img src="info-ico.svg" alt="" class="tooltip-trigger" />
+                <div class="tooltip-window info-tooltip">
+                  <p>
+                    <span>Диплом о профессиональной переподготовке:</span>
+                    «Бизнес-психология»
+                  </p>
+                  <p>
+                    <span>Диплом о профессиональной переподготовке: </span>
+                    «Психолог в социальной сфере» 450 часов
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="lg-visible">
+                2 диплома о профессиональной переподготовке
+              </p>
+              <p class="sm-visible">2 диплома</p>
+              <div class="tooltip-container">
+                <img src="info-ico.svg" alt="" class="tooltip-trigger" />
+                <div class="tooltip-window info-tooltip">
+                  <p>
+                    <span>Диплом о профессиональной переподготовке:</span>
+                    «Бизнес-психология»
+                  </p>
+                  <p>
+                    <span>Международный диплом MBA, </span> который подтвердит
+                    вашу квалификацию зарубежным клиентам или работодателям
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="lg-visible">Диплом о профессиональной переподготовке</p>
+              <p class="sm-visible">Диплом</p>
+              <div class="tooltip-container">
+                <img src="info-ico.svg" alt="" class="tooltip-trigger" />
+                <div class="tooltip-window info-tooltip">
+                  <span>Диплом о профессиональной переподготовке: </span>
+                  «Бизнес-психология»
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">
+                Сессии «Вопрос-ответ» с преподавателем курса
+              </h6>
+              <h6 class="sm-visible">
+                Сессии <br />
+                «Вопрос-ответ»
+              </h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Сессии «Вопрос-ответ» с преподавателем курса
+                </div>
+              </div>
+            </div>
+            <div>16 часов</div>
+            <div>28 часов</div>
+            <div>34 часа</div>
+            <div>16 часов</div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Супервизии</h6>
+            </div>
+            <div>16 часов</div>
+            <div>28 часов</div>
+            <div>28 часов</div>
+            <div>16 часов</div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Групповые практикумы</h6>
+            </div>
+            <div>16 часов</div>
+            <div>18 часов</div>
+            <div>40 часов</div>
+            <div>16 часов</div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Интенсивы с экспертами</h6>
+            </div>
+            <div>16 часов</div>
+            <div>62 часа</div>
+            <div>62 часа</div>
+            <div>16 часов</div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Отработки психологических техник в тройках</h6>
+            </div>
+            <div>28 часов</div>
+            <div>68 часов</div>
+            <div>68 часов</div>
+            <div>28 часов</div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>
+                Онлайн встречи <br />
+                «Телемост» с экспертами
+              </h6>
+              <div class="tooltip-container">
+                <img src="info-ico.svg" alt="" class="tooltip-trigger" />
+                <div class="tooltip-window info-tooltip">
+                  Онлайн-встречи «Телемост» с экспертами для разбора вопросов
+                  о деятельности в разных странах
+                </div>
+              </div>
+            </div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div>2 часа</div>
+            <div><img src="no-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Доступ к курсу навсегда</h6>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">
+                Участие в программе SmartMental, по которой вы получаете первых
+                клиентов
+              </h6>
+              <h6 class="sm-visible">Участие в программе SmartMental</h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Участие в программе SmartMental, по которой вы получаете
+                  первых клиентов
+                </div>
+              </div>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Возможность получения членства в ОППЛ</h6>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">
+                Электронный сертификати уникальный NFT-сертификат
+              </h6>
+              <h6 class="sm-visible">Электронный сертификати</h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Электронный сертификат и уникальный NFT-сертификат
+                </div>
+              </div>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Доступ к банку демосессий</h6>
+              <div class="tooltip-container">
+                <img src="info-ico.svg" alt="" class="tooltip-trigger" />
+                <div class="tooltip-window info-tooltip">
+                  Доступ к банку демосессий с реальными клиентами от
+                  психологов-практиков, работающих в разных подходах
+                </div>
+              </div>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Дополнительный модуль</h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Личный бренд и маркетинг для психолога
+                </div>
+              </div>
+              <span>Личный бренд и маркетинг для психолога</span>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Онлайн-кабинет психолога «под ключ»</h6>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Дополнительный модуль</h6>
+              <span>Возрастная психология с выдачей NFT-сертификата</span>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Возрастная психология с выдачей NFT-сертификата
+                </div>
+              </div>
+            </div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">
+                Интервизионный чат для обсуждения клиентских кейсов
+              </h6>
+              <h6 class="sm-visible">Интервизионный чат</h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Интервизионный чат для обсуждения клиентских кейсов
+                </div>
+              </div>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+
+          <li class="tarif__description-item" id="ends_mobile">
+            <!-- <span id="ends_mobile"></span> -->
+           <!-- <span id="sectionEnds"></span> -->
+            <div class="fixed-left" id="sectionEnds">
+              <h6>Участие в сообществе Smart с выпускниками всех потоков</h6>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">
+                Сопровождение экспертов в практической работе после окончания
+                курса в течение 3 мес.
+              </h6>
+              <h6 class="sm-visible">Сопровождение экспертов</h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Сопровождение экспертов в практической работе после окончания
+                  курса в течение 3 мес.
+                </div>
+              </div>
+            </div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">
+                Индивидуальный менторинг с супервизором для разбора кейсов
+                клиентов
+              </h6>
+              <h6 class="sm-visible">Индивидуальный менторинг</h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Индивидуальный менторинг с супервизором для разбора кейсов
+                  клиентов
+                </div>
+              </div>
+            </div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div>3 часа</div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Индивидуальные коуч-сессии</h6>
+            </div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div>3 встречи</div>
+          </li>
+          <li id="undo-trigger-elenemt" class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">
+                Личный ассистент с психологическим образованием
+              </h6>
+              <h6 class="sm-visible">Личный ассистент</h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Индивидуальные звонки с личным ассистентом 1 раз в месяц
+                </div>
+              </div>
+            </div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6>Индивидуальные звонки с личным ассистентом 1 раз в месяц</h6>
+            </div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+          <li class="tarif__description-item">
+            <div class="fixed-left">
+              <h6 class="lg-visible">
+                Отдельный чат с куратором, личным ассистентом и руководителем
+                учебного департамента
+              </h6>
+              <h6 class="sm-visible">Отдельный чат</h6>
+              <div class="tooltip-container">
+                <img
+                  src="info-ico.svg"
+                  alt=""
+                  class="tooltip-trigger trigger-mobile"
+                />
+                <div class="tooltip-window info-tooltip">
+                  Отдельный чат с куратором, личным ассистентом и руководителем
+                  учебного департамента
+                </div>
+              </div>
+            </div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="no-ico.svg" alt="" /></div>
+            <div><img src="yes-ico.svg" alt="" /></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="test-top"></div>
+    <div class="test"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="card-animation.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

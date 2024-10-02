@@ -1,0 +1,328 @@
+:root {
+  --main-color: #e9f6ff;
+  --accent-color: #4f72b1;
+  --text-color: #242424;
+  --text-light-color: #8e8e8e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "SFUIDisplay", Arial, sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+.tarif {
+  /* width: 96%;
+  max-width: 1160px;
+  margin: 0 auto; */
+}
+
+.tarif__top {
+  position: sticky;
+  top: 75px;
+  background-color: #fff;
+  z-index: 25;
+}
+.tarif__top-inner {
+  width: 96%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 123px;
+  position: relative;
+}
+.tarif__top-inner::after {
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #c7c7c7;
+}
+.tarif__heading {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1.3;
+}
+.scroll-tip {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.scroll-tip span {
+  font-size: 12px;
+  color: #829aee;
+}
+.tarif__scroll-container {
+  width: 96%;
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+.tarif__scroll-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 100px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+.tarif__cards--desctop {
+  position: sticky;
+  top: 255px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  z-index: 10;
+}
+
+.tarif__card {
+  flex-shrink: 0;
+  height: 355px;
+  width: 280px;
+  background-color: var(--main-color);
+  border-radius: 6px;
+  padding: 30px 17px;
+  text-align: center;
+}
+.tarif__card--img {
+  padding: 0;
+  background-image: url("tarif-img.png");
+  background-position: center;
+  background-size: 280px;
+  background-repeat: no-repeat;
+}
+.tarif-name {
+  font-weight: 500;
+  font-size: 21px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.tarif-name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 245px;
+  height: 1px;
+  background-color: var(--accent-color);
+}
+.tarif-name--sm {
+  display: none;
+}
+.tarif__card.fixed-left {
+  z-index: 11;
+}
+
+.tarif-price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.25;
+}
+.tarif-price span {
+  font-size: 34px;
+}
+.tarif-short-info {
+  font-size: 12px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.tarif-short-info p {
+  margin-bottom: 6px;
+  padding: 0 5px;
+}
+.light-text {
+  color: var(--text-light-color);
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--accent-color);
+  margin: 12px 16px;
+}
+.tarif-short-info .tooltip-trigger {
+  font-weight: 500;
+  text-decoration: underline;
+}
+/* Tooltip  */
+.tooltip-container {
+  display: inline;
+  position: relative;
+}
+.tooltip-trigger {
+  cursor: pointer;
+  z-index: 15;
+}
+
+.tooltip-window {
+  font-size: 12px;
+  position: absolute;
+  border-radius: 8px;
+  text-align: left;
+  opacity: 0;
+}
+.tooltip-window::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.tooltip-trigger:hover ~ .tooltip-window {
+  opacity: 1;
+}
+.read-more-tooltip {
+  bottom: 25px;
+  right: 0;
+  width: 260px;
+  padding: 10px 15px;
+  background-color: #fff;
+  z-index: 20;
+}
+.read-more-tooltip::after {
+  bottom: -15px;
+  border-top: 15px solid #ffffff;
+}
+.tarif-btn {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 3px;
+  padding: 10px 30px;
+  transition: all 0.3s linear;
+}
+.tarif-btn:hover {
+  color: #fff;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.sm-visible {
+  display: none;
+}
+/* Описание тарифов  */
+.tarif__description-container {
+  padding-top: 100px;
+  z-index: 5;
+}
+.tarif__description-item {
+  display: flex;
+}
+
+.tarif__description-item > div {
+  flex-shrink: 0;
+  width: 287px;
+  border-top: 1px solid #c7c7c7;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.tarif__description-item .fixed-left {
+  background-color: white;
+  /* border-top: 1px solid #c7c7c7; */
+  z-index: 6;
+}
+.tarif__description-item:last-child .fixed-left,
+.tarif__description-item:last-child > div {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.tarif__description-item h6 {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}
+.tarif__description-item .fixed-left {
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+}
+.tarif__description-item > div:first-child span {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  text-align: left;
+}
+.fixed-left .tooltip-container {
+  position: absolute;
+  right: 0;
+}
+.trigger-mobile {
+  display: none;
+}
+.diploma-info {
+  font-size: 16px;
+}
+
+.info-tooltip {
+  top: 40px;
+  right: -13px;
+  background-color: #ecf0f7;
+  width: 290px;
+  padding: 13px;
+  box-shadow: 4px -5px 16px rgba(16, 24, 40, 0.1);
+  z-index: 7;
+}
+
+.info-tooltip::after {
+  top: -15px;
+  right: 15px;
+  border-top: 15px solid #ecf0f7;
+  transform: rotate(180deg);
+}
+.info-tooltip span {
+  font-weight: 500;
+}
+.info-tooltip p:nth-child(1) {
+  margin-bottom: 10px;
+}
+.fixed-left .info-tooltip {
+  bottom: 50px;
+  top: unset;
+}
+.fixed-left .info-tooltip::after {
+  top: unset;
+  bottom: -15px;
+  transform: rotate(0);
+}
+
+.heading-fixed {
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+.scroll-tip-fixed {
+  position: fixed;
+  top: 135px;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-tarif-fixed {
+  position: fixed;
+  top: 183px;
+}

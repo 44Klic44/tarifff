@@ -1,0 +1,101 @@
+/* СТИЛИ АНИМАЦИИ */
+.test-top{
+  height: 700px;
+  background-color: bisque;
+}
+.scroll-tip_mobile{
+  display: none;
+}
+
+@media (min-width: 480.09px) {
+ 
+  
+  .testtop {
+    height: 600px;
+    background-color: rgb(141, 128, 154);
+  }
+
+  .tarif-name_min {
+    font-size: 18px;
+    transition: all 0.1s linear;
+  }
+
+  .card_none {
+    display: none !important;
+    transition: all 0.2s linear;
+  }
+
+  .tarif-price_spanMin {
+    transition: all 0.1s linear;
+    font-size: 30px;
+  }
+
+  .tarif-price_min {
+    padding-bottom: 10px;
+    font-size: 16px;
+    transition: all 0.1s linear;
+  }
+  .tarif-btn_min {
+    height: 36px;
+    width: 200px;
+    font-size: 14px;
+    transition: all 0.1s linear;
+  }
+  .tarif-price_min span {
+    font-size: 30px;
+    transition: all 0.1s linear;
+  }
+
+  .tarif__card_min {
+    transition: all 0.4s linear;
+    padding: 20px 17px;
+    height: 175px !important;
+  }
+  .tarif__cards-containerMin {
+    height: 176px;
+  }
+
+  .fixed-left.tarif__card_min {
+    transition: height 0.4s linear;
+  }
+}
+
+@media (max-width: 480.09px) {
+  
+  .scroll-tip_mobile {
+ display: block;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+  .scroll-tip_mobile span {
+    font-size: 12px;
+    color: #829aee;
+  }
+  .scroll-tip {
+  
+    display: none;
+   
+}
+.tarif__heading_mobile {
+    
+  position: fixed;
+  top: 0px;
+}
+
+.scroll-tip_min{
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 136px;
+  z-index: 12;
+}
+.tarif__cards_mob{
+  position: fixed;
+  top: 203px;
+  z-index: 12;
+}
+}
+
