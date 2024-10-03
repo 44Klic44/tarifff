@@ -61,6 +61,7 @@
 }
 
 @media (max-width: 480.09px) {
+ 
   
   .scroll-tip_mobile {
  display: block;
@@ -97,5 +98,8 @@
   top: 203px;
   z-index: 12;
 }
+.tip_min{
+  display: none;
+ }
 }
 
