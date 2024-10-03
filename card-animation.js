@@ -5,7 +5,7 @@ function stickMenu() {
     var sectionStarts = $('#sectionStarts').offset().top;
     var sectionEnds = $('#sectionEnds').offset().top;
     if (windowTop > sectionEnds) {
-      $('.tarif__top').removeClass('tarif__heading_mobile');
+      $('.tarif__top').addClass('tip_min');
 
 
          $('.tarif__cards-containerMin').addClass('tarif__cards-containerMin');
@@ -27,6 +27,8 @@ function stickMenu() {
    
     
     } else if (windowTop > sectionStarts) {
+      $('.tarif__top').removeClass('tip_min');
+      
       $('.tarif__top ').addClass('tarif__heading_mobile');
 
 
@@ -74,14 +76,19 @@ function stickMenu() {
     var tartsmobile = $('#starts_mobile').offset().top;
     var ends_mobile = $('#ends_mobile').offset().top;
     if (windowmobile > ends_mobile) {
-      $('.scroll-tip_mobile').removeClass('scroll-tip_min');
+      $('.scroll-tip_mobile').addClass('tip_min');
 
-      $('.tarif__cards--desctop').removeClass('tarif__cards_mob');
+      $('.tarif__cards--desctop').addClass('tip_min');
   
     } else if (windowmobile > tartsmobile ) {
       $('.scroll-tip_mobile ').addClass('scroll-tip_min');
 
       $('.tarif__cards--desctop').addClass('tarif__cards_mob');
+
+
+      $('.scroll-tip_mobile').removeClass('tip_min');
+
+      $('.tarif__cards--desctop').removeClass('tip_min');
    
     } else {
       $('.scroll-tip_mobile ').removeClass('scroll-tip_min');
